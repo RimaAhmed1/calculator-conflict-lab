@@ -1,34 +1,44 @@
 import java.util.Scanner;
 
 public class Calculator {
-    public static void main(String[]args){
 
-        Scanner scanner = new Scanner(System.in);
-        //Multiplication and division
-         System.out.println("Enter first number: ");
-         int num1 = scanner.nextInt();
-          System.out.println("Enter second number: ");
-          int num2 = scanner.nextInt();
+        public static void main(String[] args) {
 
-         int product = num1 * num2;
-         int quotient = num1 / num2;
+            Scanner scanner = new Scanner(System.in);
+            //Multiplication and division
+            System.out.println("Enter first number: ");
+            int num1 = scanner.nextInt();
+            System.out.println("Enter second number: ");
+            int num2 = scanner.nextInt();
 
-         System.out.println("product :" + product);
-         System.out.println("Quotient :" + quotient);
+            int product = num1 * num2;
+            int quotient = num1 / num2;
 
-
-        System.out.println("Enter first number: ");
-        int number1=scanner.nextInt();
-
-        System.out.println("Enter first number: ");
-        int number2=scanner.nextInt();
-
-        int sum=number1 + number2;
-        int difference=number1 - number2;
-
-        System.out.println("Sum: "+sum);
-        System.out.println("Difference: "+difference);
+            System.out.println("product :" + product);
+            System.out.println("Quotient :" + quotient);
 
 
-    }
+            System.out.println("Enter first number: ");
+            int number1 = scanner.nextInt();
+
+            System.out.println("Enter second number: ");
+            int number2 = scanner.nextInt();
+
+            int sum = number1 + number2;
+            int difference = number1 - number2;
+
+            System.out.println("Sum: " + sum);
+            System.out.println("Difference: " + difference);
+
+            //Add a factorial function.
+            System.out.println("Enter number: ");
+            int number = scanner.nextInt();
+            int result = 1;
+            for (int factNumber = number; factNumber >= 1; factNumber--) {
+                result = result * factNumber;
+            }
+            System.out.println("Factorial = " + result);
+            scanner.close();
+
+        }
 }
