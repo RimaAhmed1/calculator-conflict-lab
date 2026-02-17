@@ -21,7 +21,7 @@ public class Calculator {
         System.out.println("Sum: " + sum);
         System.out.println("Difference: " + difference);
 
-        System.out.println(number1 + "is base and " + number2 + "is exponent and the RESULT is " + Math.pow(number1, number2));
+        System.out.println(number1 + " is base and " + number2 + " is exponent and the RESULT is " + Math.pow(number1, number2));
 
 
     }
